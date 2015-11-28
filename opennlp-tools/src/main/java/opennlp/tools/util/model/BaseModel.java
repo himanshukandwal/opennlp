@@ -179,6 +179,11 @@ public abstract class BaseModel implements ArtifactProvider {
     loadModel(in);
   }
 
+  protected void cleanupMetaData() {
+	  artifactSerializers.clear();
+	  artifactMap.clear();
+  }
+  
   protected BaseModel(String componentName, File modelFile) throws IOException, InvalidFormatException  {
     this(componentName, true);
 

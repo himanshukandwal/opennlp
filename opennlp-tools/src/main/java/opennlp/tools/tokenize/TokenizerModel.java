@@ -63,6 +63,10 @@ public final class TokenizerModel extends BaseModel {
     checkArtifactMap();
   }
 
+  public void cleanupMetaData() {
+	  super.cleanupMetaData();
+  }
+  
   /**
    * Initializes the current instance.
    *

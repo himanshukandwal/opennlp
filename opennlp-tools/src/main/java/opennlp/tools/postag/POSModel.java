@@ -113,6 +113,10 @@ public final class POSModel extends BaseModel {
     super(COMPONENT_NAME, modelURL);
   }
 
+  public void cleanupMetaData() {
+	  super.cleanupMetaData();
+  }
+  
   @Override
   protected Class<? extends BaseToolFactory> getDefaultFactory() {
     return POSTaggerFactory.class;
